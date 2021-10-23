@@ -14,7 +14,6 @@
     <engines>
         <engine name="cordova" version=">=7.1.0" />
         <engine name="cordova-android" version=">=7.0.0"/>
-        <engine name="cordova-ios" version=">=4.4.0"/>
     </engines>
 
     <js-module src="www/BackgroundGeolocationFirebase.js" name="BackgroundGeolocationFirebase">
@@ -25,22 +24,6 @@
         <preference name="GradlePluginGoogleServicesEnabled" value="true" />
         <preference name="GradlePluginGoogleServicesVersion" value="4.2.0" />
     </config-file>
-
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="BackgroundGeolocationFirebase">
-                <param name="ios-package" value="CDVBackgroundGeolocationFirebase"/>
-                <param name="onload" value="true"/>
-            </feature>
-        </config-file>
-
-        <framework src="Firebase/Core" type="podspec" spec="" />
-        <framework src="Firebase/Firestore" type="podspec" spec="" />
-
-
-        <source-file src="src/ios/CDVBackgroundGeolocationFirebase.m" />
-        <header-file src="src/ios/CDVBackgroundGeolocationFirebase.h" />
-    </platform>
 
     <platform name="android">
 
