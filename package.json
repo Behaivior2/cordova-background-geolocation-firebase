@@ -28,7 +28,7 @@
     "cordovaDependencies": {
       "<5.4.0": {
         "cordova": ">=6.4.0",
-        "cordova-android": ">=6.0.0",
+        "cordova-android": ">=6.0.0"
       },
       "5.4.0": {
         "cordova": ">=7.1.0",
