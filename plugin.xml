@@ -26,12 +26,10 @@
     </config-file>
 
     <platform name="android">
-
-        <preference name="FIREBASE_CORE_VERSION" default="18.0.0" />
-        <framework src="com.google.firebase:firebase-core:$FIREBASE_CORE_VERSION" />
-
-        <preference name="FIREBASE_FIRESTORE_VERSION" default="22.0.0" />
-        <framework src="com.google.firebase:firebase-firestore:$FIREBASE_FIRESTORE_VERSION" />
+        <preference name="ANDROID_FIREBASE_BOM_VERSION" default="30.3.1" />
+        <framework src="platform('com.google.firebase:firebase-bom:$ANDROID_FIREBASE_BOM_VERSION')" />
+        <framework src="com.google.firebase:firebase-core" />
+        <framework src="com.google.firebase:firebase-firestore" />
 
         <resource-file src="src/android/libs/com/transistorsoft/tsfirebaseproxy" target="../../libs/com/transistorsoft/tsfirebaseproxy" />
 
